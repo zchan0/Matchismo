@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcS-c9-CSp">
                                 <rect key="frame" x="217" y="183" width="166" height="233"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="initial" backgroundImage="cardfront">
+                                <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -56,7 +56,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="cardButton" destination="VcS-c9-CSp" id="wba-0Q-fCF"/>
                         <outlet property="flipsLable" destination="Oca-8A-jYr" id="sdP-Qb-Lq7"/>
                     </connections>
                 </viewController>
@@ -66,6 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cardfront" width="64" height="96"/>
+        <image name="cardback" width="64" height="96"/>
     </resources>
 </document>

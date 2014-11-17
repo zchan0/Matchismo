@@ -13,15 +13,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *flipsLable;
 @property (nonatomic) int flipCount;
 @property (strong,nonatomic) Deck *myDeck;
-@property (weak, nonatomic) IBOutlet UIButton *cardButton;
+//@property (weak, nonatomic) IBOutlet UIButton *cardButton;
 
 @end
 
 @implementation ViewController
+
+/*
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self touchCardButton:self.cardButton];
-}
+    self.flipCount = 0;
+}*/
 
 -(Deck *)myDeck
 {
@@ -49,12 +52,14 @@
         if (myCard) {
             [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
             [sender setTitle:[myCard contents] forState:UIControlStateNormal];
+            self.flipCount++;//both call setter and getter
         }
+        /*
         else{
              [sender removeFromSuperview];
-        }
+        }*/
     }
-    self.flipCount++;//both call setter and getter
+    
 }
 
 
