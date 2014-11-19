@@ -18,6 +18,7 @@
 		54B6E6751A1843F400702AE6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6E6741A1843F400702AE6 /* Deck.m */; };
 		54B6E67E1A18519000702AE6 /* Card+PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6E67D1A18519000702AE6 /* Card+PlayingCard.m */; };
 		54B6E6811A18584F00702AE6 /* Deck+PlayingDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6E6801A18584F00702AE6 /* Deck+PlayingDeck.m */; };
+		54B911221A1ADABC000447CB /* NSObject+CardMatingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B911211A1ADABC000447CB /* NSObject+CardMatingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		54B6E67D1A18519000702AE6 /* Card+PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+PlayingCard.m"; sourceTree = "<group>"; };
 		54B6E67F1A18584F00702AE6 /* Deck+PlayingDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Deck+PlayingDeck.h"; sourceTree = "<group>"; };
 		54B6E6801A18584F00702AE6 /* Deck+PlayingDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Deck+PlayingDeck.m"; sourceTree = "<group>"; };
+		54B911201A1ADABC000447CB /* NSObject+CardMatingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CardMatingGame.h"; sourceTree = "<group>"; };
+		54B911211A1ADABC000447CB /* NSObject+CardMatingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CardMatingGame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				54B6E67D1A18519000702AE6 /* Card+PlayingCard.m */,
 				54B6E67F1A18584F00702AE6 /* Deck+PlayingDeck.h */,
 				54B6E6801A18584F00702AE6 /* Deck+PlayingDeck.m */,
+				54B911201A1ADABC000447CB /* NSObject+CardMatingGame.h */,
+				54B911211A1ADABC000447CB /* NSObject+CardMatingGame.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B911221A1ADABC000447CB /* NSObject+CardMatingGame.m in Sources */,
 				54B6E6811A18584F00702AE6 /* Deck+PlayingDeck.m in Sources */,
 				54B6E6751A1843F400702AE6 /* Deck.m in Sources */,
 				5494DBE91A170988008E1314 /* ViewController.m in Sources */,

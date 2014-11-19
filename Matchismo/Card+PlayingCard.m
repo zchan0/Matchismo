@@ -12,7 +12,7 @@
 
 +(NSArray *) validSuits
 {
-    return @[@"♣︎",@"♥︎",@"♦︎",@"♠︎"];
+    return @[@"♠️",@"♥️",@"♣️",@"♦️"];
 }
 
 +(NSArray *) rankStrings
@@ -46,11 +46,31 @@
     }
 }
 
-//返回牌的内容字符串
 -(NSString *)contents
 {
     NSArray *rankStrings = [PlayingCard rankStrings];
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
+}
+
+-(int)match:(NSArray *)otherCards
+{
+    int score = 0;
+    NSUInteger numOtherCards = [otherCards count];
+    if (numOtherCards) {
+        for (PlayingCard *otherCard in otherCards) {
+            if (otherCard.rank == self.rank) {
+                score += 4;
+            }else if ([otherCard.suit isEqualToString:self.suit]){
+                score += 1;
+            }
+            //If there are more than 3 cards to be matched, all cards in the otherCards should be matched in pairs.
+            if (numOtherCards > 1) {
+                score += [[otherCards firstObject] match:
+                          [otherCards subarrayWithRange:NSMakeRange(1, numOtherCards - 1)]];
+            }
+        }
+    }
+    return score;
 }
 
 
